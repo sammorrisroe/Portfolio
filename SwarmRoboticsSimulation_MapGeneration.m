@@ -84,7 +84,7 @@ for i = 1:5
 
 end
 
-% Save the generated map to a text file
+% Save the generated map to a text file to be read in Javascript simulation
 fileID = fopen('output_map.txt', 'w'); % Open the file for writing
 for i = 1:size(map, 1)
     fprintf(fileID, '%d ', map(i, :)); % Write each row
